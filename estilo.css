@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+html {
+  font-family: "Outfit", sans-serif;
+  background-image: url("bg-guess-the-word.png");
+  background-size: cover;
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 164px;
+}
+main {
+  border-radius: 8px;
+  background-color: #030616;
+  background: linear-gradient(to bottom right, #030616, rgba(73, 73, 75));
+  padding: 20px;
+}
+.titulo > p {
+  background: linear-gradient(to right, #7429c6, #c951e7);
+  line-height: 115%;
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 30px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.letra-input {
+  opacity: 0;
+  z-index: -999;
+  position: absolute;
+  pointer-events: none;
+}
+
+.letras {
+  display: flex;
+  justify-content: center;
+}
+.letras input {
+  background-color: #4a5567;
+  color: #f2f5f9;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  border-radius: 6px;
+  border-bottom: 3px solid #030616;
+  font-size: 36px;
+}
+.aciertos {
+  font-size: 12px;
+  color: #97a3b6;
+  display: flex;
+  justify-content: space-around;
+}
+.intentos {
+  display: flex;
+  align-items: center;
+}
+.errores {
+  display: flex;
+  align-items: center;
+}
+.error {
+  width: 50px;
+}
+
+.pistas {
+  color: #97a3b6;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 20px 20px;
+}
+.pista {
+  font-size: 400;
+}
+.botones {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.boton {
+  font-family: "Outfit", sans-serif;
+  color: #f2f5f9;
+  size: 12px;
+  background-color: #c951e7;
+  width: 50px;
+  height: 20px;
+  margin: 20px;
+  border-radius: 4px;
+  border: none;
+  border-bottom: 3px solid #672171;
+  height: 30px;
+  width: 120px;
+}
+.boton:hover {
+  background: #8d18a5;
+}
+
+@media screen and (max-width: 720px) {
+  html {
+    background-size: cover;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+  }
+  main {
+    margin-top: 25px;
+  }
+  .letras {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sweetalert2.min.css" />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>GuessWord</title>
+  </head>
+  <body>
+    <header></header>
+
+    <div class="container">
+      <main class="card">
+        <div class="titulo">
+          <p>Palabra Secreta</p>
+        </div>
+        <input type="text" name="" id="" maxlength="1" class="letra-input" />
+
+        <div class="letras"></div>
+
+        <div class="aciertos">
+          <div class="intentos">
+            <p class="posibilidades">Intentos:<span></span></p>
+          </div>
+          <div>
+            <div class="errores">
+              <p class="letrasErroneas error">Errores:<span></span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pistas">
+          Pista:
+          <div class="pista"></div>
+        </div>
+        <div class="botones">
+          <input type="submit" value="Nueva palabra" class="boton" />
+        </div>
+      </main>
+    </div>
+
+    <footer></footer>
+    <script src="listado.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
